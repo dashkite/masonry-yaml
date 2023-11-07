@@ -1,10 +1,6 @@
 import YAML from "js-yaml"
-import modularize from "@dashkite/masonry-export"
 
-yaml = [
-  ({ input }) -> JSON.stringify YAML.load input
-  modularize 
-]
+yaml = ({ input }) -> JSON.stringify YAML.load input
 
 export default yaml
 export { yaml }
